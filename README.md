@@ -1,4 +1,4 @@
-# API Platform + Messenger example
+# API Platform + Messenger example
 
 This repository contains an example of an application using the [`api-platform-messenger` bridge](https://github.com/sroze/api-platform-messenger).
 
