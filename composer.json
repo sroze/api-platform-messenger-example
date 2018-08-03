@@ -10,8 +10,10 @@
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.1",
         "symfony/lts": "^4@dev",
+        "symfony/messenger": "^4.1",
         "symfony/web-server-bundle": "^4.1",
-        "symfony/yaml": "^4.1"
+        "symfony/yaml": "^4.1",
+        "sroze/api-platform-messenger": "dev-master"
     },
     "require-dev": {
         "symfony/dotenv": "^4.1"
@@ -58,5 +60,11 @@
         "symfony": {
             "allow-contrib": false
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sroze/api-platform-messenger"
+        }
+    ]
 }

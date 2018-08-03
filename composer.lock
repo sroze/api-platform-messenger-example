@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a599ae5561126537888d142b6296b216",
+    "content-hash": "9a581a637d1fdd82c0c5d578847d7879",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -1644,6 +1644,35 @@
             "time": "2017-10-23T01:57:42+00:00"
         },
         {
+            "name": "sroze/api-platform-messenger",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroze/api-platform-messenger.git",
+                "reference": "14041c8906130dc30f6330ce571ec4b8a33c2761"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroze/api-platform-messenger/zipball/14041c8906130dc30f6330ce571ec4b8a33c2761",
+                "reference": "14041c8906130dc30f6330ce571ec4b8a33c2761",
+                "shasum": ""
+            },
+            "require": {
+                "api-platform/core": "^2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sam\\ApiPlatform\\Messenger\\": "src/"
+                }
+            },
+            "support": {
+                "source": "https://github.com/sroze/api-platform-messenger/tree/master",
+                "issues": "https://github.com/sroze/api-platform-messenger/issues"
+            },
+            "time": "2018-08-02T16:05:48+00:00"
+        },
+        {
             "name": "symfony/asset",
             "version": "v4.1.3",
             "source": {
@@ -2772,6 +2801,69 @@
             "description": "Enforces Long Term Supported versions of Symfony components",
             "homepage": "https://symfony.com",
             "time": "2018-04-03T05:04:16+00:00"
+        },
+        {
+            "name": "symfony/messenger",
+            "version": "v4.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/messenger.git",
+                "reference": "00e620218b545261ce242a9b145e31a01ae77d42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/messenger/zipball/00e620218b545261ce242a9b145e31a01ae77d42",
+                "reference": "00e620218b545261ce242a9b145e31a01ae77d42",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/console": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4.6|~4.0",
+                "symfony/http-kernel": "~3.4|~4.0",
+                "symfony/process": "~3.4|~4.0",
+                "symfony/property-access": "~3.4|~4.0",
+                "symfony/serializer": "~3.4|~4.0",
+                "symfony/validator": "~3.4|~4.0",
+                "symfony/var-dumper": "~3.4|~4.0"
+            },
+            "suggest": {
+                "enqueue/messenger-adapter": "For using the php-enqueue library as a transport."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Messenger\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Samuel Roze",
+                    "email": "samuel.roze@gmail.com"
+                }
+            ],
+            "description": "Symfony Messenger Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-07-26T21:05:42+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -4007,7 +4099,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "symfony/lts": 20
+        "symfony/lts": 20,
+        "sroze/api-platform-messenger": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
