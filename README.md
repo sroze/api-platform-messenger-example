@@ -2,6 +2,8 @@
 
 This repository contains an example of an application using the [`api-platform-messenger` bridge](https://github.com/sroze/api-platform-messenger).
 
+![Swagger view](./public/api-platform-messenger-example.png)
+
 ## Usage
 
 1. Install the dependencies
